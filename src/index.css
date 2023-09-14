@@ -1,0 +1,391 @@
+@import "~font-awesome/css/font-awesome.css";
+body
+{ font-size: 14px; color: #333; list-style: 26px;font-family: 'Roboto', sans-serif; }
+
+/** ======================  base css ==============================**/
+
+a:hover{ text-decoration: none; }
+/** ======================  header ==============================**/
+.header{ background-color: #3c8dbc }
+.header .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    border-radius: 0px;
+}
+.header .user-image {
+    float: left;
+    width: 35px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+.header .navbar-light .navbar-nav .nav-link{ color: #fff }
+.header .navbar-light .navbar-nav .nav-link:hover, .header .navbar-light .navbar-nav .nav-link:focus   {
+    
+       background: rgba(0,0,0,0.1);
+    color: #f6f6f6;
+}
+.header .fa.fa-fw.fa-bars{ color: #fff; }
+.header .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+.header  li>a>.label {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9; background-color: #333;    border-radius: .25em;
+}
+.header  li>a:after{ display: none; }
+
+.header-ul{    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ffffff;
+    padding: 7px 10px;
+    border-bottom: 1px solid #f4f4f4;
+    color: #333;
+    font-size: 14px;}
+
+    .navbar-nav>.notifications-menu>.dropdown-menu, .navbar-nav>.messages-menu>.dropdown-menu, .navbar-nav>.tasks-menu>.dropdown-menu {
+    width: 280px;
+    padding: 0 0 0 0;
+    margin: 0;
+    top: 100%;
+}
+.navbar-nav>.messages-menu>.dropdown-menu li .menu>li>a>div>img {
+    margin: auto 10px auto auto;
+    width: 40px;
+    height: 40px;
+}
+.navbar-nav>.messages-menu>.dropdown-menu li .menu>li>a ,.navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a{
+    margin: 0;
+    padding: 10px 10px;
+        display: block;
+    white-space: nowrap;
+    border-bottom: 1px solid #f4f4f4;
+}
+.navbar-nav>.messages-menu>.dropdown-menu li .menu>li>a>h4 {
+    padding: 0;
+    margin: 0 0 0 45px;
+    color: #333;
+    font-size: 15px;
+    position: relative;
+}
+.navbar-nav>.messages-menu>.dropdown-menu li .menu>li>a>p {
+    margin: 0 0 0 45px;
+    font-size: 12px;
+    color: #888888;
+}
+
+.footer-ul a{
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 7px 10px;
+    border-bottom: 1px solid #eeeeee;
+    color: #333 ; display: block;
+    }
+
+      .dropdown-menu-over .menu{  max-height: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: hidden;}
+
+    .navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a {
+    color: #444444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+}
+.navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a>.glyphicon, .navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a>.fa, .navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a>.ion {
+    width: 20px;
+}
+
+a.navbar-brand {
+    width: 165px;
+}
+ 
+
+.color-wave-text {
+    /* NSSB design */
+    background-image: linear-gradient(50deg, rgb(2, 8, 2),rgb(15, 181, 142), rgb(219, 158, 16),rgb(11, 11, 1),rgb(8, 2, 2), rgb(57, 9, 28));
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: wave 4s linear infinite;
+    padding: 40px;
+    font-size: 30px;
+    font-family: 'YourFont', sans-serif; 
+    font-weight: bold;
+
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 200% 200%;
+    }
+  }
+  
+/*********************** End of the TOP Bar ********************/
+
+/***    left menu ****/
+
+.sidebar{   width: 220px; height: 100vh; float: left; background-color:#000;transition: all 0.5s  ease-in-out; }
+
+.sidebar ul{ list-style:none; margin:0px; padding:0px; }
+.sidebar li a,.sidebar li a.collapsed.active{ display:block; padding:14px 18px; color:#fff;border-left:0px solid #dedede;  text-decoration:none}
+.sidebar li a:hover {
+  color: #4dba0e !important;
+  transition: all 0.5s ease-in-out;
+}
+.sidebar li a i{ padding-right:5px;}
+.sidebar ul li .sub-menu li a{ position:relative}
+.sidebar ul li .sub-menu li a:before{
+    font-family: FontAwesome;
+    content: "\f105";
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.sidebar ul li .sub-menu li a:hover:after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 5px;
+    background-color: #111;
+    height: 100%;
+}
+.sidebar ul li .sub-menu li a:hover{ background-color:#222; padding-left:20px; transition: all 0.5s  ease-in-out}
+.sub-menu{ border-left:5px solid #dedede;}
+	.sidebar li a .nav-label,.sidebar li a .nav-label+span{ transition: all 0.5s  ease-in-out}
+	
+
+	.sidebar.fliph li a .nav-label,.sidebar.fliph li a .nav-label+span{ display:none;transition: all 0.5s  ease-in-out}
+	.sidebar.fliph {
+    width: 42px;transition: all 0.5s  ease-in-out;
+   
+}
+	
+.sidebar.fliph li{ position:relative}
+.sidebar.fliph .sub-menu {
+    position: absolute;
+    left: 39px;
+    top: 0;
+    background-color: #222;
+    width: 150px;
+    z-index: 100;
+}
+	
+
+	.user-panel {
+    clear: left;
+    display: block;
+    float: left;
+}
+.user-panel>.image>img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+}
+.user-panel>.info,  .user-panel>.info>a {
+    color: #fff;
+}
+.user-panel>.info>p {
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+.user-panel {
+    clear: left;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 15px 10px;
+ 
+}
+.user-panel>.info {
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+    left: 55px;
+}
+.fliph .user-panel{ display: none;
+}
+/*********************** End of the SideBar ********************/
+/* Dashboard*/
+
+.dashboard {
+    margin-left: 260px;
+    margin-right: 60px; 
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+  }
+  .dashboard-section {
+    flex: 1;
+    min-width: calc(25% - 20px);
+    border: 1px solid #ccc;
+    padding: 50px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .dashboard-section:nth-child(1) {
+    background-color: #ff5733;
+    color: #fff;
+  }
+  
+  .dashboard-section:nth-child(2) {
+    background-color: #00bcd4;
+    color: #fff;
+  }
+  
+  .dashboard-section:nth-child(3) {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  .dashboard-section:nth-child(4) {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .dashboard-section:nth-child(5) {
+    background-color: #9c27b0;
+    color: #fff;
+  }
+  
+  .dashboard-section:nth-child(6) {
+    background-color: #673ab7;
+  }
+  
+  .dashboard-section:nth-child(7) {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .dashboard-section:nth-child(8) {
+    background-color: #e91e63;
+    color: #fff;
+  }
+  
+  /* Hover animation */
+  .dashboard-section:hover {
+    transform: scale(1.05);
+  }
+  /*********************** End of the Dashboard ********************/
+/* AddCandidate.css */
+
+.form-container {
+  margin-top: 40px; /* Adjust this value based on your navbar height */
+  padding: 10px;
+}
+
+.larger-input {
+  font-size: 16px; /* Increase the font size for input fields */
+  padding: 10px; /* Increase the padding for input fields */
+}
+
+/* Add margin between label and input */
+.form-group label {
+  margin-bottom: 8px;
+
+}
+
+/* Optional: To change the background color of the form */
+.forms-sample {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+}
+.btn-primary {
+  font-size: 18px;
+  padding: 12px 24px;
+  margin-bottom: 8px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ /* datatable.net*/
+/* Adjust the font-size and other properties for the table */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Increase the font-size for table headers and data */
+.table th,
+.table td {
+  font-size: 16px; /* Adjust as needed */
+}
+
+/* Increase the font-size for the table caption if needed */
+.table-caption {
+  font-size: 18px; /* Adjust as needed */
+}
+
+/* Adjustments for smaller screens if needed */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    font-size: 14px; /* Adjust for smaller screens */
+    padding: 8px; /* Adjust for smaller screens */
+  }
+  .table-caption {
+    font-size: 16px; /* Adjust for smaller screens */
+  }
+}
+
+
+.table-wrapper {
+  max-height: 400px; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+}
+
+
+/* jodit editor */
+
+.jodit-container {
+  width: 40%; /* 30% space on both right and left (total width is 100%) */
+  margin: 40px auto; /* Add a top margin and center horizontally */
+}
+
+/
+.jodit-wysiwyg {
+  font-size: 14px; 
+
+}
+
+/* Style for the button */
+.joditbutton {
+  /* Add any styles you want for the button here */
+}
+
+
